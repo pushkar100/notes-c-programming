@@ -150,4 +150,28 @@ printf("%d", z); // 195
 printf("%c %c", x, y); // 97 98 => %c is a formatter to char type. (Reverse map to char)
 ```
 
+** Fill notes here > Control Structures **
+
+## C Functions:
+
+- A function is a self-contained block or code which does a particular task.
+- It contains statements that perform that particular task.
+- It may take in input (information) in order to execute.
+- It may also return information after it has finished running.
+
+Note: 
+1. Functions can call other functions and also call themselves.
+2. C programming follows IMPERATIVE programming paradigm (C++ & Java follow OO paradigm. There is also a Functional Programming paradigm that is quite popular).
+
+Advantages of functions:
+- Breaks code into manageable units which are reusable.
+- Helps keep code clean and readable.
+
+
+
+
+
+
+
+
 
