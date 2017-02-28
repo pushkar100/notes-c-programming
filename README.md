@@ -386,8 +386,8 @@ int y = 31; // global variable. Used inside main() with the help of extern keywo
 ```
 
 Note: 
-1. If `extern` keyword was NOT being used inside the main() function then trying to access `y` inside it would have **caused an error** because the global declaration of `y` falls after the function definition. `extern` helps with idenitify global variables declared after the functions are defined.
-2. Global variables vs Local variables(auto, static, register): Local variables of a function, when accessed inside it, take precedence over a global variable having the same name.
+- If `extern` keyword was NOT being used inside the main() function then trying to access `y` inside it would have **caused an error** because the global declaration of `y` falls after the function definition. `extern` helps with idenitify global variables declared after the functions are defined.
+- Global variables vs Local variables(auto, static, register): Local variables of a function, when accessed inside it, take precedence over a global variable having the same name.
 
 Ex:
 ```
