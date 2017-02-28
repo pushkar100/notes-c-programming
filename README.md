@@ -100,8 +100,8 @@ Examples:
 - `unsigned long a;` : an unsigned long integer.
 
 Note:
-1. The total values in the unsigned range is the same as in the signed range. Only difference is that the range starts from 0 in unsigned and moves in the positive direction.
-2. The default is `signed` but we do not have to prefix it before any integer data type (since it's the default).
+- The total values in the unsigned range is the same as in the signed range. Only difference is that the range starts from 0 in unsigned and moves in the positive direction.
+- The default is `signed` but we do not have to prefix it before any integer data type (since it's the default).
 
 ### Floating Point Data Types:
 
@@ -136,8 +136,8 @@ The characters are actually mapped to integers which are then stored in binary i
 - `char a = 65;` : Also stores the character 'A' since it is mapped to the integer 70 in the ASCII table.
 
 Note: 
-1. `char` can be thought of as a subset to the `short` integer type since it can hold 1 byte(8 bits) or 256 integer values (0 to 255) and the symbol stored in it maps to one of these integer values.
-2. Hence, **Arithmetic Operations** can be performed on following data types: INTEGERS, FLOATING POINTS & CHARACTERS. **Imp!** 
+- `char` can be thought of as a subset to the `short` integer type since it can hold 1 byte(8 bits) or 256 integer values (0 to 255) and the symbol stored in it maps to one of these integer values.
+- Hence, **Arithmetic Operations** can be performed on following data types: INTEGERS, FLOATING POINTS & CHARACTERS. **Imp!** 
 
 Ex:
 ```
@@ -160,8 +160,8 @@ printf("%c %c", x, y); // 97 98 => %c is a formatter to char type. (Reverse map 
 - It may also return information after it has finished running.
 
 Note: 
-1. Functions can call other functions and also call themselves.
-2. C programming follows IMPERATIVE programming paradigm (C++ & Java follow OO paradigm. There is also a Functional Programming paradigm that is quite popular).
+- Functions can call other functions and also call themselves.
+- C programming follows IMPERATIVE programming paradigm (C++ & Java follow OO paradigm. There is also a Functional Programming paradigm that is quite popular).
 
 Advantages of functions:
 - Breaks code into manageable units which are reusable.
@@ -194,8 +194,8 @@ Function Definition:
 - `<arguments-list>` : This is the list of the inputs expected by the function. Format: Data type followed by a name for the variable that is going to hold the passed value. It can be Zero or more and are separated by commas(,) while being enclosed within parentheses. Ex: `void _fun1(int num)`, `int add(int num1, int num2)`, `int floor(double _rawInput)`.
 
 Note: 
-1. In C, two functions cannot have the same name even they have different return types or different arguments list. In contrast, in C++ or Java, the functions can have the same name as long as their return types or argument(s) lists differ.
-2. To return a value from within a function, use the `return` command to which we must pass a value. Ex: `return 5;`, `return num`. The value returned must match with the return type of the function.
+- In C, two functions cannot have the same name even they have different return types or different arguments list. In contrast, in C++ or Java, the functions can have the same name as long as their return types or argument(s) lists differ.
+- To return a value from within a function, use the `return` command to which we must pass a value. Ex: `return 5;`, `return num`. The value returned must match with the return type of the function.
 
 The return-type, function-name and arguments-list constitute the 'function signature'.
 
@@ -220,15 +220,15 @@ Function Declaration:
 Note: The arguments list in the declaration need not contain the associated variable names (Optional) (But, in the definition they should have names - known as formal parameters). Ex. of function declaration: `int sum(int, int);`, `int sum(int a, int b)` (with variable names).
 
 Note:
-1. Formal parameters - The variables in the arguments list in the function definition (Act as local variables - see scope).
-2. Actual parameters - The actual values passed to the function through a function call. Ex: `int sum = add(a, 5);`. The formal parameters receive these particular values when the function is called/invoked.
+- Formal parameters - The variables in the arguments list in the function definition (Act as local variables - see scope).
+- Actual parameters - The actual values passed to the function through a function call. Ex: `int sum = add(a, 5);`. The formal parameters receive these particular values when the function is called/invoked.
 
 ### Putting it All Together:
 
 We must: 
-1. Declare a function.
-2. Define a function.
-3. Call a function. (In that order)
+- Declare a function.
+- Define a function.
+- Call a function. (In that order)
 
 Ex:
 ```
@@ -252,8 +252,8 @@ The reason is because the declarations usually go into Header Files (with `.h` e
 ### Parameter Passing: By-Value vs By-Reference:
 
 In C, there are two ways by which we can pass data or inputs to a function:
-1. Pass by Value, or
-2. Pass by Reference
+- Pass by Value, or
+- Pass by Reference
 
 Pass by Value: Ex:
 ```
@@ -286,10 +286,10 @@ We can create variables with different 'settings' such as:
 These settings are governed by what is known as the variable's 'Storage Class'.
 
 Tnere are 4 storage classes in C:
-1. Automatic
-2. Register
-3. Static
-4. External
+- Automatic
+- Register
+- Static
+- External
 
 ### Automatic Storage Class:
 
@@ -331,8 +331,8 @@ Note: We can create random blocks too (with {}) and not just for functions or if
 With the main difference between automatic and register variables being Register v/s Memory storage locations, **everything else is the same**.
 
 Note: Register storage classes are **almost never used** these days because:
-1. Issues with multithreaded processes.
-2. Modern compilers choose when to store variables in registers (Smart optimizations) - Therefore, it does not make sense to explicity define register variables.
+- Issues with multithreaded processes.
+- Modern compilers choose when to store variables in registers (Smart optimizations) - Therefore, it does not make sense to explicity define register variables.
 
 Explicitly defining an register variable: Use `register` keyword. Ex: `register int x;`.
 
